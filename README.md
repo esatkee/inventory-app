@@ -1,16 +1,34 @@
-# hafta14
+# Product Management
 
-A new Flutter project.
+A Flutter coursework application for managing products and categories with a local SQLite database.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Add and manage products with name, price, stock quantity and category fields.
+- Organise products by category and filter the product list.
+- Store application data locally with `sqflite`.
+- Demonstrate a local user-login workflow.
 
-A few resources to get you started if this is your first Flutter project:
+## Getting started
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Use Flutter with Dart `^3.7.2` and a device supported by `sqflite`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub get
+flutter run
+```
+
+## Code structure
+
+- `lib/helpers/database_helper.dart` — SQLite schema, queries and data operations.
+- `lib/screens/home_page.dart` — product and category interface.
+- `lib/screens/login_screen.dart` — local login screen.
+- `lib/widgets/app_drawer.dart` — navigation.
+
+## Project scope
+
+This is a learning project. The local authentication example uses seeded accounts and plaintext password comparison; it is not a production authentication system.
+
+## Türkçe
+
+Flutter ve SQLite ile geliştirdiğim ürün yönetimi uygulamasıdır. Ürün adı, fiyat, stok ve kategori bilgilerinin yönetilmesini sağlar. Veritabanı işlemleri ayrı bir yardımcı sınıfta toplanmıştır.
